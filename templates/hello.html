@@ -1,0 +1,15 @@
+{#<!-- changes show up on page refresh in hot template mode only -->#}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+    Hello, {{ name }}!<br /><r />
+    
+	<p>Changes to <i>index.css</i> show up on page refresh in both modes.</p>
+
+	<p>Changes to <i>hello.html</i> show up on page refresh in hot template mode only. In fixed template mode, they will show after re-compiling.</p>
+</html>
+

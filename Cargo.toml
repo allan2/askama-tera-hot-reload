@@ -1,0 +1,21 @@
+[package]
+name = "askama-tera-hot-reload"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+tokio = { version = "1.2", features = ["full"] }
+axum = "0.5"
+# hot template
+tera = { version = "1", default-features = false, optional = true }
+# fixed template
+askama_axum = { git = "https://github.com/djc/askama", optional = true }
+askama = { git = "https://github.com/djc/askama", features = [
+    "with-axum",
+], optional = true }
+
+[features]
+default = ["hot-template"]
+hot-template = ["tera"]
+fixed-template = ["askama", "askama_axum"]

@@ -1,0 +1,4 @@
+/** changes show up on page refresh in both modes **/
+body {
+	color: blue;
+}
