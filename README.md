@@ -29,6 +29,10 @@ You could also have a mix of fixed templates and hot templates. To run in a mixe
 cargo run --features fixed-template
 ```
 
+## Limitations
+Askama and Tera templates are similar Jinja-based templates, but they are not exactly the same.
+For example, Tera requires HTML comments to be enclosed in curly braces, while Askama does not.
+
 ## Future considerations
 
 Perhaps one day, it will be possible to recast the [Askama AST to the Tera AST](https://github.com/djc/askama/issues/425).
